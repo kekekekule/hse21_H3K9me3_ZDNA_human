@@ -33,3 +33,9 @@ https://raw.githubusercontent.com/kekekekule/hse21_H3K9me3_ZDNA_human/master/dat
 
 
 
+# Вторичная структура
+
+```
+https://raw.githubusercontent.com/Nazar1997/DeepZ/master/annotation/DeepZ.bed
+```
+
