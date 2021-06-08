@@ -20,3 +20,16 @@ cat bed_files | xargs -tI{} bash -c 'liftOver   data/H3K9me3_H1.{}.hg38.bed   hg
 
 
 
+```
+track visibility=dense name="ENCFF678VNN"  description="H3K9me3_H1.ENCFF678VNN.hg19.fitered.bed"
+https://raw.githubusercontent.com/kekekekule/hse21_H3K9me3_ZDNA_human/master/data/H3K9me3_H1.ENCFF678VNN.hg19.filtered.bed
+
+track visibility=dense name="ENCFF918VFL"  description="H3K9me3_H1.ENCFF918VFL.hg19.fitered.bed"
+https://raw.githubusercontent.com/kekekekule/hse21_H3K9me3_ZDNA_human/master/data/H3K9me3_H1.ENCFF918VFL.hg19.filtered.bed
+
+track visibility=dense name="ChIP_merge"  description="H3K9me3_H1.merge.hg19.fitered.bed"
+https://raw.githubusercontent.com/kekekekule/hse21_H3K9me3_ZDNA_human/master/data/H3K9me3_H1.merge.hg19.bed
+```
+
+
+
