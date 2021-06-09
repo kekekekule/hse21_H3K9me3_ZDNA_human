@@ -79,13 +79,23 @@ wget https://raw.githubusercontent.com/Nazar1997/DeepZ/master/annotation/DeepZ.b
 
 
 
-Сессия: http://genome.ucsc.edu/cgi-bin/hgSession?hgsid=1123636785_MVfXqwZJ1TNDAhRQL7DTGLRzuia2&hgS_doMainPage=1
+Сессия со всеми трэками: http://genome.ucsc.edu/cgi-bin/hgSession?hgsid=1123636785_MVfXqwZJ1TNDAhRQL7DTGLRzuia2&hgS_doMainPage=1 (решил, что оставить все — наилучшая идея).
 
 ```bash
 wc -l data/H3K9me3_H1.intersect_with_DeepZ.bed
 ```
 
 Количество пересечений: 1051.
+
+```bash
+track visibility=dense name="intersect_with_DeepZ"  color=200,0,0  description="H3K9me3_H1.intersect_with_DeepZ.bed"
+https://raw.githubusercontent.com/kekekekule/hse21_H3K9me3_ZDNA_human/master/data/H3K9me3_H1.intersect_with_DeepZ.bed
+
+track visibility=dense name="DeepZ"  color=0,200,0  description="DeepZ"
+https://raw.githubusercontent.com/kekekekule/hse21_H3K9me3_ZDNA_human/master/data/DeepZ.bed
+```
+
+
 
 Примеры пересечений (на скриншотах немного сделан zoom out):
 
