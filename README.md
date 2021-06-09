@@ -39,3 +39,13 @@ https://raw.githubusercontent.com/kekekekule/hse21_H3K9me3_ZDNA_human/master/dat
 https://raw.githubusercontent.com/Nazar1997/DeepZ/master/annotation/DeepZ.bed
 ```
 
+Сессия: http://genome.ucsc.edu/cgi-bin/hgSession?hgsid=1123636785_MVfXqwZJ1TNDAhRQL7DTGLRzuia2&hgS_doMainPage=1
+
+
+
+<object data="images/len_hist.H3K9me3_H1.ENCFF678VNN.hg19.pdf" type="application/pdf" width="700px" height="700px">
+<embed src="images/len_hist.H3K9me3_H1.ENCFF678VNN.hg19.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
+</embed>
+</object>
+

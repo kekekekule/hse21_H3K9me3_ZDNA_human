@@ -6,7 +6,8 @@ source('lib.R')
 
 # NAME <- 'H3K9me3_H1.ENCFF678VNN.hg19'
 # NAME <- 'H3K9me3_H1.ENCFF918VFL.hg19'
-NAME <- 'DeepZ.bed'
+# NAME <- 'DeepZ'
+NAME <- 'H3K9me3_H1.intersect_with_DeepZ'
 
 ###
 

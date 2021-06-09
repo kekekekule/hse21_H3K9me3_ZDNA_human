@@ -20,8 +20,10 @@ library(ChIPpeakAnno)
 
 ###
 
-NAME <- 'H3K9me3_H1.ENCFF678VNN.hg19'
+# NAME <- 'H3K9me3_H1.ENCFF678VNN.hg19'
 # NAME <- 'H3K9me3_H1.ENCFF918VFL.hg19'
+# NAME <- 'DeepZ'
+NAME <- 'H3K9me3_H1.intersect_with_DeepZ'
 BED_FN <- paste0(DATA_DIR, NAME, '.bed')
 
 ###
