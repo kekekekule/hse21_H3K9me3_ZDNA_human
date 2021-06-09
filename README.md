@@ -8,6 +8,8 @@ cat bed_files | xargs -tI{} bash -c 'zcat {}.bed.gz  |  cut -f1-5 > H3K9me3_H1.{
 cat bed_files | xargs -tI{} bash -c 'liftOver   data/H3K9me3_H1.{}.hg38.bed   hg38ToHg19.over.chain.gz   H3K9me3_H1.{}.hg19.bed   H3K9me3_H1.{}.unmapped.bed'
 ```
 
+# Анализ пиков гистоновой метки
+
 Распределения длин:
 
 <img src="./png/VNN_len_hist.png" alt="VNN_len_hist" style="zoom: 33%;" />
@@ -61,7 +63,7 @@ https://raw.githubusercontent.com/kekekekule/hse21_H3K9me3_ZDNA_human/master/dat
 
 Визуализация `.bed` файлов в геномном браузере:
 
-<img src="/Users/artemstreltsov/hse21_H3K9me3_ZDNA_human/png/genome_browser_custom_tracks.png" alt="genome_browser_custom_tracks" style="zoom: 25%;" />
+<img src="./png/genome_browser_custom_tracks.png" alt="genome_browser_custom_tracks" style="zoom: 25%;" />
 
 
 
@@ -71,6 +73,38 @@ https://raw.githubusercontent.com/kekekekule/hse21_H3K9me3_ZDNA_human/master/dat
 https://raw.githubusercontent.com/Nazar1997/DeepZ/master/annotation/DeepZ.bed
 ```
 
+Пайчарт для DeepZ:
+
+<img src="./png/DeepZ_piechart.png" alt="DeepZ_piechart" style="zoom:33%;" />
+
+
+
 Сессия: http://genome.ucsc.edu/cgi-bin/hgSession?hgsid=1123636785_MVfXqwZJ1TNDAhRQL7DTGLRzuia2&hgS_doMainPage=1
 
+Примеры пересечений (на скриншотах немного сделан zoom out):
 
+* chr1	1168014	1168111
+* chr2	10835	10876
+
+<img src="./png/intersection_with_DeepZ_2.png" alt="intersection_with_DeepZ_2" style="zoom: 25%;" />
+
+<img src="./png/intersection_with_DeepZ_1.png" alt="intersection_with_DeepZ_1" style="zoom:25%;" />
+
+
+
+Ассоциируем пересечения:
+
+```
+wc -l H3K9me3_H1.intersect_with_DeepZ.genes.txt
+wc -l H3K9me3_H1.intersect_with_DeepZ.genes_uniq.txt
+```
+
+Получили 94 уникальных гена и всего 132 проассоциированных.
+
+
+
+# PantherDB
+
+<img src="./png/pantherDB.png" alt="pantherDB" style="zoom:33%;" />
+
+Как можно видеть, статистически значимых результатов нет. У нас гистон связан с гетерохроматином, который находится вне генов, поэтому, вероятно, так и происходит.
