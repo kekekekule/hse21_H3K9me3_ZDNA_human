@@ -48,7 +48,7 @@ cat bed_files | xargs -tI{} bash -c 'liftOver   data/H3K9me3_H1.{}.hg38.bed   hg
 
 <img src="./png/VNN_piechart.png" alt="VNN_piechart" style="zoom:33%;" />
 
-```
+```bash
 track visibility=dense name="ENCFF678VNN"  description="H3K9me3_H1.ENCFF678VNN.hg19.fitered.bed"
 https://raw.githubusercontent.com/kekekekule/hse21_H3K9me3_ZDNA_human/master/data/H3K9me3_H1.ENCFF678VNN.hg19.filtered.bed
 
@@ -69,8 +69,8 @@ https://raw.githubusercontent.com/kekekekule/hse21_H3K9me3_ZDNA_human/master/dat
 
 # Вторичная структура
 
-```
-https://raw.githubusercontent.com/Nazar1997/DeepZ/master/annotation/DeepZ.bed
+```bash
+wget https://raw.githubusercontent.com/Nazar1997/DeepZ/master/annotation/DeepZ.bed
 ```
 
 Пайчарт для DeepZ:
@@ -80,6 +80,12 @@ https://raw.githubusercontent.com/Nazar1997/DeepZ/master/annotation/DeepZ.bed
 
 
 Сессия: http://genome.ucsc.edu/cgi-bin/hgSession?hgsid=1123636785_MVfXqwZJ1TNDAhRQL7DTGLRzuia2&hgS_doMainPage=1
+
+```bash
+wc -l data/H3K9me3_H1.intersect_with_DeepZ.bed
+```
+
+Количество пересечений: 1051.
 
 Примеры пересечений (на скриншотах немного сделан zoom out):
 
@@ -94,7 +100,7 @@ https://raw.githubusercontent.com/Nazar1997/DeepZ/master/annotation/DeepZ.bed
 
 Ассоциируем пересечения:
 
-```
+```bash
 wc -l H3K9me3_H1.intersect_with_DeepZ.genes.txt
 wc -l H3K9me3_H1.intersect_with_DeepZ.genes_uniq.txt
 ```
